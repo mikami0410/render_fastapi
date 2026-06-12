@@ -39,9 +39,11 @@ def index():
     html_content = """
     <html>
         <head>
-            <title>Some HTML </title>
+            <title>タイトル</title>
         </head>
         <body>
+            <h1>h1の見出し</h1>
+            <p>段落</p>
         </body>
     </html>
     """
