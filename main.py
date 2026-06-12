@@ -51,5 +51,5 @@ def index():
     return HTMLResponse(content = html_content, status_code = 200)
 
 @app.post("/food")
-async def give_present(food):
+async def give_food(food):
     return{"response": f"サーバです。 {food}ありがとう。"}
