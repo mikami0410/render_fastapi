@@ -44,11 +44,12 @@ def index():
         <body>
             <h1>h1の見出し</h1>
             <p>段落</p>
+            <p>ඞඞ</p>
         </body>
     </html>
     """
     return HTMLResponse(content = html_content, status_code = 200)
 
-@app.post("/present")
-async def give_present(present):
-    return{"response": f"サーバです。メリークリスマス! {present}ありがとう"}
+@app.post("/food")
+async def give_present(food):
+    return{"response": f"サーバです。 {food}ありがとう。"}
